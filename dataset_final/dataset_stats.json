@@ -1,0 +1,54 @@
+{
+  "created": "2026-02-23T12:51:12.450023",
+  "version": "ECCV_v3_100K",
+  "target": 100000,
+  "passes": 5,
+  "seed": 42,
+  "total_elapsed_seconds": 4836,
+  "total_elapsed_formatted": "1:20:36",
+  "images": 108,
+  "annotations": 108,
+  "challenges": 6639,
+  "bias_types": 14,
+  "languages": 5,
+  "multilingual_instances": 33195,
+  "bias_distribution": {
+    "spatial_relations": 505,
+    "compositional_binding": 251,
+    "scale_invariance": 418,
+    "texture": 505,
+    "physical_plausibility": 490,
+    "counting": 819,
+    "spurious_correlation": 251,
+    "temporal_reasoning": 882,
+    "text_in_image": 537,
+    "compound": 132,
+    "typography_conflict": 412,
+    "occlusion_gradient": 424,
+    "cultural_visual_bias": 539,
+    "temporal_consistency": 474
+  },
+  "difficulty_distribution": {
+    "hard": 1608,
+    "medium": 2703,
+    "easy": 2328
+  },
+  "answer_distribution_top10": {
+    "No": 1411,
+    "Yes": 1285,
+    "A": 442,
+    "car": 377,
+    "B": 271,
+    "Afternoon": 231,
+    "person": 201,
+    "1": 183,
+    "item": 174,
+    "Morning": 128
+  },
+  "stage_timings": {
+    "1. Loading Annotations": "0:00:00",
+    "2. Counterfactual Generation": "0:02:01",
+    "4. Quality Filtering": "0:00:00",
+    "5. Multilingual Translation": "1:17:29"
+  }
+}

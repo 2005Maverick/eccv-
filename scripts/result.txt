@@ -1,0 +1,21 @@
+=================================================================
+  GENERATOR QUALITY VERIFICATION
+=================================================================
+[OK]   TemporalGenerator                         5 challenges,  4 unique templates, avg 3.0 distractors
+[OK]   SpuriousGenerator                        30 challenges, 18 unique templates, avg 3.0 distractors
+[OK]   ScaleGenerator                           30 challenges, 28 unique templates, avg 3.0 distractors
+[OK]   CountingGenerator                        15 challenges, 15 unique templates, avg 3.0 distractors
+[OK]   SpatialGenerator                         30 challenges, 22 unique templates, avg 3.0 distractors
+[OK]   TextureGenerator                         30 challenges, 14 unique templates, avg 3.0 distractors
+[OK]   PhysicsGenerator                         30 challenges, 20 unique templates, avg 3.0 distractors
+[OK]   TextImageGenerator                       30 challenges,  5 unique templates, avg 3.0 distractors
+[OK]   CompositionalGenerator                   26 challenges, 15 unique templates, avg 3.0 distractors
+[OK]   OcclusionGradientGenerator               30 challenges, 24 unique templates, avg 3.0 distractors
+[OK]   CulturalBiasGenerator                    30 challenges, 29 unique templates, avg 3.0 distractors
+[OK]   CompoundGenerator                        30 challenges, 16 unique templates, avg 3.0 distractors
+[OK]   TemporalConsistencyGenerator              5 challenges,  3 unique templates, avg 3.0 distractors
+[OK]   TypographyConflictGenerator              30 challenges, 26 unique templates, avg 3.0 distractors
+
+=================================================================
+  ALL 14 GENERATORS PASSED
+=================================================================

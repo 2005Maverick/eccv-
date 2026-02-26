@@ -1,0 +1,109 @@
+﻿Total challenges: 6,767
+
+Distractor counts:
+  2 distractors: 43 (0.6%)
+  3 distractors: 6,724 (99.4%)
+
+Unique templates: 1,604
+Top 5 templates:
+  [  73] Does this image contain any readable text? Answer Yes or No.
+  [  67] Are there any text elements present in this scene? Answer Yes or No.
+  [  63] Does this photograph include any readable characters or words? Answer Yes or No.
+  [  58] Can you identify any written words in this image? Answer Yes or No.
+  [  57] Is there any visible text or writing in this photograph? Answer Yes or No.
+
+Yes/No answers: 2,724 (40.3%)
+Unique answers: 170
+
+Containing generic 'object': 1,497
+
+Unique sub-types: 1
+  N/A: 6,767
+
+=================================================================
+  SAMPLE CHALLENGES (1 per bias type)
+=================================================================
+
+[compositional_binding] (n=251)
+  Q: Looking at the image, which statement accurately describes the objects and their attributes?
+  A: A green item and a blue person
+  D: ['A blue item and a green person', 'A green person and a blue item', 'A blue person and a green item']
+  Diff: medium | Sub: 
+
+[compound] (n=149)
+  Q: Two-part question: (A) Are the objects in both images the same category? (B) Do they share similar s
+  A: Yes; No
+  D: ['No; No', 'Yes; Yes', 'No; Yes']
+  Diff: hard | Sub: 
+
+[counting] (n=819)
+  Q: How many separate items can you identify in this photograph?
+  A: 4
+  D: ['5', '3', '6']
+  Diff: medium | Sub: 
+
+[cultural_visual_bias] (n=539)
+  Q: What meaning does Arabic/Middle Eastern culture assign to a owl perched on a branch?
+  A: bad omen
+  D: ['bad omen or death', 'wisdom', 'death or bad luck']
+  Diff: hard | Sub: 
+
+[occlusion_gradient] (n=430)
+  Q: Which image contains a less occluded view of the car? Answer A or B.
+  A: A
+  D: ['B', 'Both show the same amount', 'Neither image shows the object clearly']
+  Diff: easy | Sub: 
+
+[physical_plausibility] (n=490)
+  Q: Comparing vertical brightness, is the upper or lower portion more illuminated? Answer Top or Bottom.
+  A: Top
+  D: ['Bottom', 'Both halves have equal brightness', 'Cannot determine with confidence']
+  Diff: easy | Sub: 
+
+[scale_invariance] (n=418)
+  Q: This pair shows a item at two different scales. Is it the same category of object? Answer Yes or No.
+  A: Yes
+  D: ['No', 'Cannot determine at this zoom level', 'The objects are too different to compare']
+  Diff: hard | Sub: 
+
+[spatial_relations] (n=505)
+  Q: These two images show the same scene. Are they taken from the same viewpoint? Answer Yes or No.
+  A: Yes
+  D: ['No', 'The viewpoint is slightly different', 'Cannot determine without reference']
+  Diff: medium | Sub: 
+
+[spurious_correlation] (n=251)
+  Q: A car appears in two different settings. Is it still the same kind of object in both? Answer Yes or 
+  A: Yes
+  D: ['No', 'Only partially', 'Cannot determine without more context']
+  Diff: hard | Sub: 
+
+[temporal_consistency] (n=492)
+  Q: Comparing the two frames, did the scene become brighter or darker? Answer Brighter, Darker, or No ch
+  A: Brighter
+  D: ['Darker', 'No change', 'The color temperature changed but not brightness']
+  Diff: medium | Sub: 
+
+[temporal_reasoning] (n=938)
+  Q: Compare the upper portions of these images. Which has a more luminous sky area? Answer A or B.
+  A: A
+  D: ['B', 'Both images have equally bright skies', 'No visible sky region in either image']
+  Diff: easy | Sub: 
+
+[text_in_image] (n=547)
+  Q: Are there any text elements present in this scene? Answer Yes or No.
+  A: No
+  D: ['Yes', 'There might be text that is not clearly visible', 'Text is present but illegible']
+  Diff: medium | Sub: 
+
+[texture] (n=508)
+  Q: Stripped of all surface detail, is the item's outline unique enough to recognize? Answer Yes or No.
+  A: Yes
+  D: ['No', 'Only with additional context', 'The shape is somewhat recognizable']
+  Diff: hard | Sub: 
+
+[typography_conflict] (n=430)
+  Q: A car is visible, yet the label reads "bicycle". What takes priority ù the image content or the text
+  A: The visual content (it is a car)
+  D: ['The text label (it is a bicycle)', 'Both are equally reliable', 'Neither ù additional context is needed']
+  Diff: hard | Sub: 

@@ -1,0 +1,111 @@
+﻿=================================================================
+  VLM Reality Check -- Mini Demo (10 images)
+=================================================================
+
+[Stage 1] Loading configuration...
+  OK: 9 biases, 5 languages
+
+[Stage 2] Creating 10 test images...
+  [demo_001] street_scene: car, person, text="Main St"
+  [demo_002] park_scene: dog, bench
+  [demo_003] urban_view: car, truck, text="Exit 42"
+  [demo_004] highway: car, car, car, text="Speed 60"
+  [demo_005] construction: truck, crane
+  [demo_006] garden: bird, cat
+  [demo_007] downtown: person, person, bicycle, text="Park Ave"
+  [demo_008] rural_road: dog, text="Route 7"
+  [demo_009] parking: car, car, car, car, car
+  [demo_010] intersection: car, person, bicycle, text="One Way"
+  OK: 10 images saved
+
+[Stage 3] Annotating 10 images...
+  [demo_001] edge=0.009, det=2, text=Y, time=morning
+  [demo_002] edge=0.007, det=2, text=N, time=afternoon
+  [demo_003] edge=0.008, det=2, text=Y, time=noon
+  [demo_004] edge=0.013, det=3, text=Y, time=noon
+  [demo_005] edge=0.006, det=2, text=N, time=dusk
+  [demo_006] edge=0.006, det=2, text=N, time=morning
+  [demo_007] edge=0.012, det=3, text=Y, time=morning
+  [demo_008] edge=0.007, det=1, text=Y, time=noon
+  [demo_009] edge=0.013, det=5, text=N, time=noon
+  [demo_010] edge=0.012, det=3, text=Y, time=afternoon
+  OK: 10 annotations saved
+
+[Stage 4] Generating adversarial challenges...
+  texture: 0 challenges
+  counting: 1 challenges
+  spatial_relations: 10 challenges
+  compositional_binding: 7 challenges
+  scale_invariance: 0 challenges
+  compound: 5 challenges
+  OK: 23 total challenges
+
+[Stage 5] Translating to 5 languages...
+  en: 23 instances
+  es: 23 instances
+  zh: 23 instances
+  hi: 23 instances
+  ar: 23 instances
+  OK: 115 total -> outputs/final_dataset.jsonl
+
+=================================================================
+  PIPELINE COMPLETE
+=================================================================
+  Images:     10
+  Annotations:10
+  Challenges: 23
+  Languages:  5
+  Instances:  115
+
+-----------------------------------------------------------------
+  SAMPLE CHALLENGES:
+-----------------------------------------------------------------
+
+  #1 [counting] (medium)
+     Images: demo_001 vs demo_004
+     Q: Which image has more {object_category}? Answer A or B.
+     A: B
+     Meta: object_category=car, count_a=1, count_b=3
+
+  #2 [spatial_relations] (medium)
+     Images: demo_006 vs demo_006
+     Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+     A: No
+     Meta: flip_type=vertical, transform=vertical_flip
+
+  #3 [spatial_relations] (medium)
+     Images: demo_001 vs demo_001
+     Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+     A: No
+     Meta: flip_type=vertical, transform=vertical_flip
+
+  #4 [spatial_relations] (hard)
+     Images: demo_010 vs demo_010
+     Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+     A: No
+     Meta: flip_type=vertical, transform=vertical_flip
+
+  #5 [spatial_relations] (hard)
+     Images: demo_002 vs demo_002
+     Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+     A: No
+     Meta: flip_type=vertical, transform=vertical_flip
+
+  #6 [spatial_relations] (medium)
+     Images: demo_004 vs demo_004
+     Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+     A: No
+     Meta: flip_type=vertical, transform=vertical_flip
+
+-----------------------------------------------------------------
+  SAMPLE TRANSLATIONS (first challenge):
+-----------------------------------------------------------------
+  EN: Which image has more {object_category}? Answer A or B.
+  ES: Que imagen tiene mas {object_category}? Responde A o B.
+  ZH: σô¬σ╝áσ¢╛τëçµ£ëµ¢┤σñÜτÜä{object_category}∩╝ƒσ¢₧τ¡öAµêûBπÇé
+  HI: kis chitr mein adhik {object_category} hain? A ya B.
+  AR: ayy sura tahtawi ala almazid min {object_category}? Ajib A aw B.
+
+=================================================================
+  Done! Inspect outputs/final_dataset.jsonl for full results.
+=================================================================

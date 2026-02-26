@@ -1,0 +1,48 @@
+=================================================================
+  VLM Reality Check Pipeline — Dry Run
+=================================================================
+
+[Stage 1] Repo Scaffold & Configuration
+  [OK] biases.yaml loads -- 9 biases defined
+  [OK] All 9 biases present
+  [OK] pipeline.yaml loads
+  [OK] languages.yaml loads -- 5 languages
+  [OK] 5 languages configured
+
+[Stage 2] Data Collection Pipeline
+  [OK] ImageRecord creation -- id=test_001
+  [OK] ImageRecord schema complete
+  [OK] pHash deduplication
+  [FAIL] pHash deduplication -- [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Dell\\AppData\\Local\\Temp\\tmpln1ss683\\test_hashes.db'
+  [OK] CollectionPipeline imports
+  [OK] All 4 collectors import
+
+[Stage 3] Vision Processing & Annotation
+  [OK] ProcessorBase imports
+  [OK] All 7 processors import
+  [FAIL] Astropy shadow computation
+  [OK] Texture analyzer -- edge_density=0.0091
+  [OK] Temporal extractor + construction score -- score=0.6667
+  [OK] AnnotationPipeline imports
+
+[Stage 4] Adversarial Challenge Generation
+  [OK] Challenge dataclass + serialization
+  [OK] All 14 generators import
+  [OK] Counting: generates valid challenges -- 20/20 generated
+  [OK] Spatial: generates valid challenges -- 20/20 generated
+  [OK] GenerationPipeline imports
+
+[Stage 5] Multilingual Translation
+  [OK] Question templates loaded -- 19 templates across 9 biases
+  [OK] Variable slot round-trip
+WARNING: Script validation failed for 'hi': 0.0% Devanagari (threshold 70%)
+  [OK] Script validation (HI/AR/ZH/reject)
+WARNING: Variable slots lost in translation: {'cat'}
+  [OK] Variable slot preservation check
+  [OK] TranslationPipeline imports
+
+=================================================================
+  25/27 passed, 2 failed:
+    [FAIL] [S2] pHash deduplication
+    [FAIL] [S3] Astropy shadow computation
+=================================================================

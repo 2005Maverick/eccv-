@@ -1,0 +1,19 @@
+# VLM Reality Check — Dependencies
+torch==2.1.2
+transformers==4.36.2
+ultralytics==8.0.230
+opencv-python==4.8.1.78
+astropy==6.0.0
+pytesseract==0.3.10
+Pillow==10.1.0
+datasets==2.16.1
+scipy==1.11.4
+pandas==2.1.4
+tqdm==4.66.1
+requests==2.31.0
+beautifulsoup4==4.12.2
+imagehash==4.3.1
+PyYAML==6.0.1
+python-dotenv==1.0.0
+sentencepiece==0.1.99
+sacremoses==0.1.1

@@ -1,0 +1,63 @@
+# VLM Reality Check — Pipeline Configuration
+
+# Total dataset scale
+target_dataset_size: 130000
+compound_challenge_count: 40000
+
+# Languages for multilingual translation
+languages:
+  - en
+  - es
+  - zh
+  - hi
+  - ar
+
+# Reproducibility
+random_seed: 42
+
+# Image sources for data collection
+image_sources:
+  - wikimedia
+  - openimages
+  - streetview
+  - yfcc
+
+# Target difficulty distribution across all challenges
+difficulty_distribution:
+  easy: 0.30
+  medium: 0.50
+  hard: 0.20
+
+# Collection settings
+collection:
+  target_images: 500000
+  requests_per_second: 2
+  max_retries: 3
+  min_resolution: 512
+  phash_threshold: 10
+  batch_size: 32
+
+# Processing settings
+processing:
+  yolo_confidence_threshold: 0.7
+  yolo_batch_size: 32
+  midas_batch_size: 32
+  ocr_confidence_threshold: 60
+  shadow_angle_tolerance: 25
+  edge_density_threshold: 0.05
+  contour_area_threshold: 0.10
+
+# Generation settings
+generation:
+  reject_confounded: true
+  compound_combinations:
+    - [spatial_relations, physical_plausibility]
+    - [counting, spurious_correlation]
+    - [texture, scale_invariance]
+    - [compositional_binding, text_in_image]
+
+# Translation settings
+translation:
+  template_batch_size: 32
+  validation_sample_size: 100  # per language
+  validation_seed: 42

@@ -1,0 +1,20 @@
+﻿=================================================================
+  VLM Reality Check ΓÇö Mini Demo (10 images)
+=================================================================
+
+[Stage 1] Loading configuration...
+  Γ£à 9 biases, 5 languages configured
+
+[Stage 2] Collecting 10 images from Wikimedia Commons...
+  ΓÜá∩╕Å  Outdoor photographs: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Street scenes: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Urban landscapes: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Dogs: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Cars: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Buildings: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Traffic signs: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Construction sites: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Parks: Expecting value: line 1 column 1 (char 0)
+  ΓÜá∩╕Å  Bridges: Expecting value: line 1 column 1 (char 0)
+  Γ£à Collected 0 images ΓåÆ data/raw/manifest.jsonl
+  Γ¥î Not enough images. Check your internet connection.

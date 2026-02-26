@@ -1,0 +1,242 @@
+======================================================================
+  ECCV v2 DATASET - COMPREHENSIVE ANALYSIS
+======================================================================
+
+Total challenges: 1306
+Total annotations: 108
+Total images on disk: 108
+
+--------------------------------------------------
+BIAS TYPE DISTRIBUTION
+--------------------------------------------------
+  text_in_image                   162 ( 12.4%) ######################################################
+  temporal_reasoning              160 ( 12.3%) #####################################################
+  counting                        110 (  8.4%) ####################################
+  spatial_relations               108 (  8.3%) ####################################
+  cultural_visual_bias            108 (  8.3%) ####################################
+  texture                         107 (  8.2%) ###################################
+  physical_plausibility           107 (  8.2%) ###################################
+  temporal_consistency            102 (  7.8%) ##################################
+  scale_invariance                 86 (  6.6%) ############################
+  typography_conflict              86 (  6.6%) ############################
+  occlusion_gradient               86 (  6.6%) ############################
+  compound                         31 (  2.4%) ##########
+  spurious_correlation             27 (  2.1%) #########
+  compositional_binding            26 (  2.0%) ########
+
+--------------------------------------------------
+DIFFICULTY DISTRIBUTION
+--------------------------------------------------
+  easy        394 ( 30.2%) ###################################################################################################################################
+  medium      569 ( 43.6%) #############################################################################################################################################################################################
+  hard        343 ( 26.3%) ##################################################################################################################
+
+--------------------------------------------------
+DIFFICULTY x BIAS MATRIX
+--------------------------------------------------
+  Bias Type                       easy   med  hard   tot
+  --------------------------------------------------
+  text_in_image                     40   115     7   162
+  temporal_reasoning                31    97    32   160
+  counting                          46    36    28   110
+  spatial_relations                 13    25    70   108
+  cultural_visual_bias              23    55    30   108
+  texture                           50    34    23   107
+  physical_plausibility             47    35    25   107
+  temporal_consistency              52    48     2   102
+  scale_invariance                  31    34    21    86
+  typography_conflict               16    56    14    86
+  occlusion_gradient                30    19    37    86
+  compound                           6     3    22    31
+  spurious_correlation               0     1    26    27
+  compositional_binding              9    11     6    26
+
+--------------------------------------------------
+SUB-TYPE DISTRIBUTION
+--------------------------------------------------
+  temporal_reasoning             / time_classify              124
+  text_in_image                  / no_text                    111
+  scale_invariance               / same_object_zoomed          59
+  cultural_visual_bias           / cultural_interpretation     53
+  typography_conflict            / wrong_label                 50
+  counting                       / single_counting             42
+  counting                       / relative_counting           41
+  texture                        / shape_recognition           40
+  occlusion_gradient             / identify_occluded           39
+  temporal_consistency           / nothing_changed             39
+  physical_plausibility          / light_direction             38
+  physical_plausibility          / brightness_side             36
+  temporal_reasoning             / brightness_compare          36
+  spatial_relations              / flip_detection              34
+  physical_plausibility          / consistency                 33
+  spatial_relations              / viewpoint_same              32
+  compound                       / N/A                         31
+  cultural_visual_bias           / sentiment_prediction        31
+  scale_invariance               / size_comparison             27
+  counting                       / paired_counting             27
+  spurious_correlation           / N/A                         27
+  occlusion_gradient             / occlusion_comparison        27
+  temporal_consistency           / lighting_changed            25
+  text_in_image                  / text_presence_pair          24
+  cultural_visual_bias           / cross_cultural_contrast     24
+  texture                        / same_object_silhouette      23
+  texture                        / texture_importance          22
+  texture                        / cross_object_silhouette     22
+  temporal_consistency           / count_changed               22
+  typography_conflict            / label_match                 20
+  occlusion_gradient             / threshold_test              20
+  spatial_relations              / relative_position           19
+  typography_conflict            / correct_label               16
+  temporal_consistency           / object_moved                16
+  text_in_image                  / text_presence               15
+  compositional_binding          / what_color                  14
+  spatial_relations              / spatial_count               12
+  text_in_image                  / text_read                   11
+  spatial_relations              / depth_order                  9
+  compositional_binding          / which_object                 7
+  compositional_binding          / description_match            5
+  spatial_relations              / proximity                    2
+  text_in_image                  / text_compare                 1
+
+--------------------------------------------------
+ANSWER DISTRIBUTION (top 20)
+--------------------------------------------------
+  No                                        319 ( 24.4%)
+  Yes                                       285 ( 21.8%)
+  A                                          83 (  6.4%)
+  car                                        76 (  5.8%)
+  afternoon                                  52 (  4.0%)
+  1                                          36 (  2.8%)
+  Right                                      34 (  2.6%)
+  morning                                    32 (  2.5%)
+  object                                     31 (  2.4%)
+  B                                          31 (  2.4%)
+  Left                                       29 (  2.2%)
+  person                                     29 (  2.2%)
+  Equal                                      29 (  2.2%)
+  top                                        22 (  1.7%)
+  noon                                       18 (  1.4%)
+  Positive                                   12 (  0.9%)
+  dusk                                        9 (  0.7%)
+  Negative                                    9 (  0.7%)
+  building                                    8 (  0.6%)
+  dawn                                        8 (  0.6%)
+
+--------------------------------------------------
+YES/NO BALANCE PER BIAS
+--------------------------------------------------
+  text_in_image                   Yes= 15  No=112  Other= 35  (Yes%=11%)
+  temporal_reasoning              Yes=  0  No=  0  Other=160  (N/A)
+  counting                        Yes=  0  No=  0  Other=110  (N/A)
+  spatial_relations               Yes= 42  No= 43  Other= 23  (Yes%=49%)
+  cultural_visual_bias            Yes= 18  No=  6  Other= 84  (Yes%=75%)
+  texture                         Yes= 42  No= 65  Other=  0  (Yes%=39%)
+  physical_plausibility           Yes= 33  No=  0  Other= 74  (Yes%=100%)
+  temporal_consistency            Yes= 47  No= 39  Other= 16  (Yes%=54%)
+  scale_invariance                Yes= 59  No= 27  Other=  0  (Yes%=68%)
+  typography_conflict             Yes= 16  No= 20  Other= 50  (Yes%=44%)
+  occlusion_gradient              Yes= 13  No=  7  Other= 66  (Yes%=65%)
+  compound                        Yes=  0  No=  0  Other= 31  (N/A)
+  spurious_correlation            Yes=  0  No=  0  Other= 27  (N/A)
+  compositional_binding           Yes=  0  No=  0  Other= 26  (N/A)
+
+--------------------------------------------------
+QUESTION TEMPLATE DIVERSITY
+--------------------------------------------------
+  Unique templates: 214
+  Templates used once: 96
+  Top 10:
+    [126] Does this image contain any readable text? Answer Yes or No.
+    [124] What time of day does this image appear to show? Choose from: night, dawn, 
+    [104] Do both images show the same type of object? Answer Yes or No.
+    [ 66] Are these the same scene from the same viewpoint? Answer Yes or No.
+    [ 39] Comparing Frame 1 (Image A) and Frame 2 (Image B), did anything change betw
+    [ 38] Which direction does the primary light source appear to come from? Answer l
+    [ 36] Which side of this image is brighter, the left or the right? Answer Left or
+    [ 36] Which image appears to be taken at a brighter time of day? Answer A or B.
+    [ 33] Does the lighting in this image appear physically consistent? Answer Yes or
+    [ 29] Can you identify the object from its silhouette alone? Answer Yes or No.
+
+--------------------------------------------------
+GROUND TRUTH METHODS
+--------------------------------------------------
+  ocr_text                        162
+  brightness_analysis             160
+  yolo_count                      110
+  cultural_knowledge_base         108
+  silhouette_match                107
+  brightness_gradient             107
+  programmatic_edit               102
+  zoom_factor                      86
+  yolo_vs_text                     86
+  yolo_occlusion                   86
+  flip_detection                   34
+  viewpoint_match                  32
+  compound_multi_bias              31
+  yolo_label_match                 27
+  color_histogram_bbox             26
+  bbox_position                    19
+  bbox_position_count              12
+  bbox_area_proxy                   9
+  bbox_distance                     2
+
+--------------------------------------------------
+CONFOUND CHECK STATUS
+--------------------------------------------------
+  Passed: 1306/1306 (100.0%)
+
+--------------------------------------------------
+IMAGE USAGE ANALYSIS
+--------------------------------------------------
+  Unique images referenced: 370
+  Avg uses per image:  7.1
+  Median uses:         2.0
+  Max uses:            26 (image: vlm_0031)
+  Min uses:            1
+
+--------------------------------------------------
+DISTRACTOR QUALITY
+--------------------------------------------------
+  1 distractors: 746 challenges
+  2 distractors: 225 challenges
+  3 distractors: 335 challenges
+  Duplicate distractors: 0
+  Correct answer in distractors: 0
+
+--------------------------------------------------
+TRANSLATION FILES
+--------------------------------------------------
+  dataset_ar.jsonl            1306 lines  1009.1 KB
+  dataset_en.jsonl            1306 lines  950.3 KB
+  dataset_es.jsonl            1306 lines  960.3 KB
+  dataset_hi.jsonl            1306 lines  1033.7 KB
+  dataset_multilingual.jsonl   6530 lines  4898.1 KB
+  dataset_zh.jsonl            1306 lines  944.7 KB
+
+--------------------------------------------------
+ANNOTATION QUALITY
+--------------------------------------------------
+  Total annotations:   108
+  Avg detections/img:  2.4
+  Max detections/img:  8
+  Images with OCR text: 108
+  Images with texture:  108
+  Detection labels (8 unique):
+    car                    97
+    person                 59
+    object                 47
+    building               27
+    tree                   13
+    sign                    8
+    animal                  6
+    vehicle                 2
+
+--------------------------------------------------
+POTENTIAL QUALITY ISSUES
+--------------------------------------------------
+  Same image A and B: 1048/1306 (80%)
+  No critical issues found.
+
+======================================================================
+  ANALYSIS COMPLETE - 1306 challenges analyzed
+======================================================================

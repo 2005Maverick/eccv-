@@ -1,0 +1,122 @@
+  ECCV v3 — 100K Challenge Generator
+  Target:     100,000
+  Passes:     5
+  Base seed:  42
+  Dataset:    C:\Users\Dell\Desktop\ECCV DATASET\dataset_final
+
+============================================================
+  1. Loading Annotations
+============================================================
+  Loaded 108 annotations
+  Images on disk: 108/108
+  >> annotations: 108
+  >> Elapsed: 0:00:00 | Total: 0:00:00
+
+  [SKIP] Counterfactual generation
+
+============================================================
+  3. Multi-Pass Challenge Generation
+============================================================
+  Target: 100,000 challenges
+  Passes: 5
+  Annotations: 108
+  Expected max: ~7,560 raw (before dedup)
+
+  --- Pass 1/5 (seed=42) ---
+  Pass 1 total: 1341 new | Running total: 1,341
+
+  --- Pass 2/5 (seed=1042) ---
+  Pass 2 total: 1264 new | Running total: 2,605
+
+  --- Pass 3/5 (seed=2042) ---
+  Pass 3 total: 1207 new | Running total: 3,812
+
+  --- Pass 4/5 (seed=3042) ---
+  Pass 4 total: 1171 new | Running total: 4,983
+
+  --- Pass 5/5 (seed=4042) ---
+  Pass 5 total: 1126 new | Running total: 6,109
+
+  --- Cross-image pairing ---
+    counting: 246 cross-pair challenges
+    spurious_correlation: 140 cross-pair challenges
+    temporal_reasoning: 272 cross-pair challenges
+
+============================================================
+  4. Quality Filtering
+============================================================
+  Post-filter: 6,767 challenges
+
+  Bias distribution:
+    temporal_reasoning: 938 (13.9%)
+    counting: 819 (12.1%)
+    text_in_image: 547 (8.1%)
+    cultural_visual_bias: 539 (8.0%)
+    texture: 508 (7.5%)
+    spatial_relations: 505 (7.5%)
+    temporal_consistency: 492 (7.3%)
+    physical_plausibility: 490 (7.2%)
+    typography_conflict: 430 (6.4%)
+    occlusion_gradient: 430 (6.4%)
+    scale_invariance: 418 (6.2%)
+    compositional_binding: 251 (3.7%)
+    spurious_correlation: 251 (3.7%)
+    compound: 149 (2.2%)
+
+  Difficulty:
+    easy: 2,383 (35.2%)
+    hard: 1,627 (24.0%)
+    medium: 2,757 (40.7%)
+  >> challenges: 6767
+  >> Elapsed: 0:00:00 | Total: 0:00:51
+
+  [SKIP] Multilingual translation
+
+============================================================
+  6. Summary & Stats
+============================================================
+
+  >> Elapsed: 0:00:00 | Total: 0:00:51
+
+=================================================================
+  ECCV v3 — 100K DATASET COMPLETE!
+=================================================================
+  Target:            100,000
+  Achieved:          6,767
+  Fill rate:         6.8%
+  Total time:        0:00:51
+  -----------------------------------------------
+  Annotations:       108
+  Challenges:        6,767
+  Bias types:        14
+  Dedup removed:     0 (hash collisions)
+  Multilingual:      6,767 instances
+  -----------------------------------------------
+  Difficulty:
+    easy: 2,383 (35.2%)
+    hard: 1,627 (24.0%)
+    medium: 2,757 (40.7%)
+  -----------------------------------------------
+  Bias types:
+    temporal_reasoning: 938 (13.9%)
+    counting: 819 (12.1%)
+    text_in_image: 547 (8.1%)
+    cultural_visual_bias: 539 (8.0%)
+    texture: 508 (7.5%)
+    spatial_relations: 505 (7.5%)
+    temporal_consistency: 492 (7.3%)
+    physical_plausibility: 490 (7.2%)
+    typography_conflict: 430 (6.4%)
+    occlusion_gradient: 430 (6.4%)
+    scale_invariance: 418 (6.2%)
+    compositional_binding: 251 (3.7%)
+    spurious_correlation: 251 (3.7%)
+    compound: 149 (2.2%)
+  -----------------------------------------------
+  Answer balance (top 5):
+    'No': 1,423
+    'Yes': 1,301
+    'A': 487
+    'car': 372
+    'B': 296
+=================================================================

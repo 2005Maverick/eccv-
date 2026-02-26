@@ -1,0 +1,7 @@
+# Large files exceeding GitHub's 100MB limit
+dataset_final/eccv_v3_source_images_20260222_1033.zip
+yolov8x.pt
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,110 @@
+# VLM Reality Check — Bias Taxonomy Configuration
+# Each bias defines: difficulty_split (must sum to 1.0), ground_truth_method, target_challenge_count
+
+texture:
+  name: Texture Bias
+  description: >
+    Tests whether VLMs rely on surface texture rather than object shape
+    for recognition. Pairs real photos with silhouette versions.
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: silhouette_match
+  target_challenge_count: 10000
+
+counting:
+  name: Counting Bias
+  description: >
+    Tests whether VLMs can accurately count objects, especially
+    above the subitizing limit (~4 objects).
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: yolo_count
+  target_challenge_count: 10000
+
+spatial_relations:
+  name: Spatial Relations Bias
+  description: >
+    Tests whether VLMs correctly perceive spatial orientation
+    and left/right/above/below relationships.
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: flip_detection
+  target_challenge_count: 10000
+
+physical_plausibility:
+  name: Physical Plausibility Bias
+  description: >
+    Tests whether VLMs can detect physically impossible lighting/shadow
+    configurations using astropy-verified solar geometry.
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: astropy_shadow
+  target_challenge_count: 10000
+
+temporal_reasoning:
+  name: Temporal Reasoning Bias
+  description: >
+    Tests whether VLMs can order images chronologically based on
+    lighting, construction progress, and temporal cues.
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: exif_timestamp
+  target_challenge_count: 10000
+
+spurious_correlation:
+  name: Spurious Correlation Bias
+  description: >
+    Tests whether VLMs change object identification based on
+    background context (typical vs atypical settings).
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: yolo_label_match
+  target_challenge_count: 10000
+
+compositional_binding:
+  name: Compositional Binding Bias
+  description: >
+    Tests whether VLMs correctly bind attributes (color, size)
+    to specific objects rather than swapping bindings.
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: color_histogram_bbox
+  target_challenge_count: 10000
+
+text_in_image:
+  name: Text-in-Image Bias
+  description: >
+    Tests whether VLMs can read and reason about visible text
+    in images (signs, labels, addresses).
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: ocr_text
+  target_challenge_count: 10000
+
+scale_invariance:
+  name: Scale Invariance Bias
+  description: >
+    Tests whether VLMs recognize objects at different scales
+    and distinguish recognition from size estimation.
+  difficulty_split:
+    easy: 0.30
+    medium: 0.50
+    hard: 0.20
+  ground_truth_method: zoom_factor
+  target_challenge_count: 10000

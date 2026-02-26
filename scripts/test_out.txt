@@ -1,0 +1,59 @@
+﻿=================================================================
+  GENERATOR QUALITY VERIFICATION ù All 14 Generators
+=================================================================
+python : Traceback 
+(most recent call 
+last):
+At line:1 char:1
++ python scripts/test
+_generators.py > scri
+pts/test_output.txt 
+2>&1; typ ...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Traceba   
+ ck (most recent     
+call last)::Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+  File "C:\Users\Dell
+\Desktop\ECCV DATASET
+\scripts\test_generat
+ors.py", line 144, 
+in <module>
+    print(f"  {PASS} 
+{cls_name:40s}  
+{n:2d} challenges, 
+{n_unique:2d} unique 
+templates, avg 
+{avg_dist:.1f} 
+distractors")
+  File "C:\Users\Dell
+\AppData\Local\Progra
+ms\Python\Python311\L
+ib\encodings\cp1252.p
+y", line 19, in 
+encode
+    return codecs.cha
+rmap_encode(input,sel
+f.errors,encoding_tab
+le)[0]
+           ^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+^^^
+UnicodeEncodeError: 
+'charmap' codec 
+can't encode 
+character '\u2705' 
+in position 2: 
+character maps to 
+<undefined>

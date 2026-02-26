@@ -1,0 +1,46 @@
+# VLM Reality Check — Language Configuration
+# Helsinki-NLP/opus-mt translation model IDs
+
+en:
+  name: English
+  code: en
+  script: latin
+  direction: ltr
+  is_source: true
+  model_id: null  # Source language, no translation needed
+
+es:
+  name: Spanish
+  code: es
+  script: latin
+  direction: ltr
+  is_source: false
+  model_id: Helsinki-NLP/opus-mt-en-es
+
+zh:
+  name: Chinese
+  code: zh
+  script: cjk
+  direction: ltr
+  is_source: false
+  model_id: Helsinki-NLP/opus-mt-en-zh
+  unicode_range: [0x4E00, 0x9FFF]
+
+hi:
+  name: Hindi
+  code: hi
+  script: devanagari
+  direction: ltr
+  is_source: false
+  model_id: Helsinki-NLP/opus-mt-en-hi
+  unicode_range: [0x0900, 0x097F]
+
+ar:
+  name: Arabic
+  code: ar
+  script: arabic
+  direction: rtl
+  is_source: false
+  model_id: Helsinki-NLP/opus-mt-en-ar
+  unicode_range: [0x0600, 0x06FF]
+  rtl_marker: "\u200F"

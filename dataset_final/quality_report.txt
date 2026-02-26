@@ -1,0 +1,269 @@
+Total challenges: 3391
+
+=== compositional_binding (61 challenges) ===
+  [medium] sub=which_object
+    Q: Which object in the image is red?
+    A: person
+    D: ['object']
+
+  [medium] sub=description_match
+    Q: Which description correctly matches the image?
+    A: A green person and a gray car
+    D: ['A gray person and a green car', 'A green car and a gray person', 'A gray car and a green person']
+
+  [easy] sub=which_object
+    Q: Which object in the image is blue?
+    A: object
+    D: ['car']
+
+
+=== compound (84 challenges) ===
+  [hard] sub=N/A
+    Q: Part 1: Do both images show the same type of object? Part 2: Is the texture the same in both?
+    A: Yes; No
+    D: ['No; No', 'Yes; Yes', 'No; Yes']
+
+  [hard] sub=N/A
+    Q: Part 1: What color is the object? Part 2: How many person are visible?
+    A: gray; 1
+    D: ['blue; 1', 'gray; 2', 'green; 1']
+
+  [hard] sub=N/A
+    Q: Part 1: How many object are in this image? Part 2: Are most of them on the left or right side?
+    A: 1; Left
+    D: ['2; Right', '1; Right']
+
+
+=== counting (471 challenges) ===
+  [hard] sub=relative_counting
+    Q: Are there more sign or object in this image? Answer sign, object, or Equal.
+    A: Equal
+    D: ['sign', 'object']
+
+  [easy] sub=single_counting
+    Q: How many object are in this image?
+    A: 1
+    D: ['2', '3']
+
+  [easy] sub=paired_counting
+    Q: Which image has more objects? Answer A or B.
+    A: A
+    D: ['B']
+
+
+=== cultural_visual_bias (321 challenges) ===
+  [hard] sub=cultural_interpretation
+    Q: What is the primary symbolic meaning of a lotus flower in Chinese/East Asian culture?
+    A: purity rising from mud
+    D: ['beauty or exotic flower', 'purity and divine creation', 'beauty']
+
+  [hard] sub=cultural_interpretation
+    Q: In the cultural context of Chinese/East Asian, what does wearing all white typically signify?
+    A: mourning or funeral
+    D: ['wedding or purity', 'purity or peace']
+
+  [easy] sub=cultural_interpretation
+    Q: What does this hand gesture typically mean?
+    A: approval or good
+    D: ['number one or good', 'offensive gesture', 'approval']
+
+
+=== occlusion_gradient (258 challenges) ===
+  [easy] sub=identify_occluded
+    Q: An object in this image is 10% occluded (partially hidden). What is the object?
+    A: car
+    D: ['truck', 'bus', 'bicycle']
+
+  [easy] sub=threshold_test
+    Q: Part of the person in this image is hidden (10% occluded). Is the person still clearly recognizable? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [easy] sub=identify_occluded
+    Q: An object in this image is 10% occluded (partially hidden). What is the object?
+    A: object
+    D: ['artifact', 'sculpture', 'tool']
+
+
+=== physical_plausibility (224 challenges) ===
+  [medium] sub=consistency
+    Q: Does the lighting in this image appear physically consistent? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [easy] sub=light_direction
+    Q: Which direction does the primary light source appear to come from? Answer left, right, top, or bottom.
+    A: bottom
+    D: ['left', 'right', 'top']
+
+  [hard] sub=brightness_side
+    Q: Which side of this image is brighter, the left or the right? Answer Left or Right.
+    A: Right
+    D: ['Left']
+
+
+=== scale_invariance (136 challenges) ===
+  [medium] sub=same_object_zoomed
+    Q: Do both images show the same type of object? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [easy] sub=same_object_zoomed
+    Q: Do both images show the same type of object? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [easy] sub=same_object_zoomed
+    Q: Do both images show the same type of object? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+
+=== spatial_relations (239 challenges) ===
+  [medium] sub=spatial_count
+    Q: Which side of the image has more objects, left or right? Answer Left, Right, or Equal.
+    A: Left
+    D: ['Right', 'Equal']
+
+  [hard] sub=flip_detection
+    Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+  [hard] sub=flip_detection
+    Q: Are these the same scene from the same viewpoint? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+
+=== spurious_correlation (239 challenges) ===
+  [hard] sub=N/A
+    Q: What is the main {object_category} in this image? Name it.
+    A: object
+    D: ['car']
+
+  [hard] sub=N/A
+    Q: What is the main {object_category} in this image? Name it.
+    A: car
+    D: ['tree', 'building', 'person']
+
+  [hard] sub=N/A
+    Q: What is the main {object_category} in this image? Name it.
+    A: car
+    D: ['object', 'sign']
+
+
+=== temporal_consistency (266 challenges) ===
+  [medium] sub=lighting_changed
+    Q: Comparing Frame 1 (Image A) and Frame 2 (Image B), did the lighting change? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [medium] sub=count_changed
+    Q: Comparing Frame 1 (Image A) and Frame 2 (Image B), did the number of cars change? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [easy] sub=lighting_changed
+    Q: Comparing Frame 1 (Image A) and Frame 2 (Image B), did the lighting change? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+
+=== temporal_reasoning (396 challenges) ===
+  [medium] sub=brightness_compare
+    Q: Which image appears to be taken at a brighter time of day? Answer A or B.
+    A: B
+    D: ['A']
+
+  [hard] sub=time_classify
+    Q: What time of day does this image appear to show? Choose from: night, dawn, morning, noon, afternoon, dusk.
+    A: dusk
+    D: ['night', 'dawn', 'afternoon']
+
+  [hard] sub=brightness_compare
+    Q: Which image appears to be taken at a brighter time of day? Answer A or B.
+    A: A
+    D: ['B']
+
+
+=== text_in_image (196 challenges) ===
+  [easy] sub=text_read
+    Q: What text is visible in this image?
+    A: WAYOUTBACK.COM
+    D: ['No text visible', 'Cannot determine']
+
+  [medium] sub=no_text
+    Q: Does this image contain any readable text? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+  [medium] sub=no_text
+    Q: Does this image contain any readable text? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+
+=== texture (242 challenges) ===
+  [hard] sub=shape_recognition
+    Q: Can you identify the car from its silhouette alone? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+  [medium] sub=shape_recognition
+    Q: Can you identify the object from its silhouette alone? Answer Yes or No.
+    A: Yes
+    D: ['No']
+
+  [medium] sub=texture_importance
+    Q: Is texture more important than shape for recognizing the object? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+
+=== typography_conflict (258 challenges) ===
+  [medium] sub=wrong_label
+    Q: The text label says "device". What object is actually shown in the image?
+    A: object
+    D: ['device', 'Cannot determine', 'Both are correct']
+
+  [medium] sub=label_match
+    Q: Does the text label on this image correctly identify the main object? Answer Yes or No.
+    A: No
+    D: ['Yes']
+
+  [medium] sub=wrong_label
+    Q: The text label says "device". What object is actually shown in the image?
+    A: object
+    D: ['device', 'Cannot determine', 'Both are correct']
+
+
+=== QUALITY METRICS ===
+Q length: min=31, max=166, avg=76
+Yes/No questions: 1231/3391 (36.3%)
+  1 distractors: 2039 challenges
+  2 distractors: 630 challenges
+  3 distractors: 722 challenges
+Unique question templates: 292/3391
+
+Most reused templates:
+  [ 288x] Which image appears to be taken at a brighter time of day? Answer A or B.
+  [ 239x] What is the main {object_category} in this image? Name it.
+  [ 170x] Which image has more objects? Answer A or B.
+  [ 149x] Do both images show the same type of object? Answer Yes or No.
+  [ 131x] Are these the same scene from the same viewpoint? Answer Yes or No.
+  [ 108x] What time of day does this image appear to show? Choose from: night, dawn, morning, noon, afternoon,
+  [ 106x] Does this image contain any readable text? Answer Yes or No.
+  [  81x] Comparing Frame 1 (Image A) and Frame 2 (Image B), did the lighting change? Answer Yes or No.
+  [  79x] Can you identify the object from its silhouette alone? Answer Yes or No.
+  [  79x] Does the lighting in this image appear physically consistent? Answer Yes or No.
+
+Duplicate Q+A pairs: 274
+  [154x] Q=Which image appears to be taken at a brighter time of day? Answer A or B.... A=A
+  [135x] Q=What is the main {object_category} in this image? Name it.... A=car
+  [134x] Q=Which image appears to be taken at a brighter time of day? Answer A or B.... A=B
+  [94x] Q=Do both images show the same type of object? Answer Yes or No.... A=Yes
+  [88x] Q=Which image has more objects? Answer A or B.... A=B
+
+Trivially short answers (<2 chars): 760
+Challenges with 0 distractors: 0
